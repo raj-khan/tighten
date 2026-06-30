@@ -29,13 +29,6 @@ curl -o ~/.claude/commands/tighten.md \
   https://raw.githubusercontent.com/raj-khan/tighten/main/tighten.md
 ```
 
-Or clone and copy:
-
-```bash
-git clone https://github.com/raj-khan/tighten.git
-cp tighten/tighten.md ~/.claude/commands/
-```
-
 Restart Claude Code (or run `/help`) and `/tighten` will appear in the list.
 
 ## Usage
