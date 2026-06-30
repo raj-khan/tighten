@@ -104,6 +104,25 @@ The facts (12 services, the v2 API, the March 14 date) survive. The padding ("At
 - **Matches your style.** It follows the punctuation, headings, and reference style the file already uses.
 - **Asks first if you mean *summarize*.** Leaving facts out is a different job; it will confirm before doing that.
 
+## What Tighten cuts
+
+Common padding it removes, while keeping the fact in each line intact:
+
+| # | Pattern | Before | After |
+|---|---------|--------|-------|
+| 1 | Filler connectives | "In order to deploy, you must set `PORT`." | "To deploy, set `PORT`." |
+| 2 | Throat-clearing | "It is important to note that the cache expires after 60s." | "The cache expires after 60s." |
+| 3 | Hedging | "You might possibly want to consider raising the timeout." | "Raise the timeout." |
+| 4 | Empty intensifiers | "This is a really very simple fix." | "This fix is simple." |
+| 5 | Restated context | "As mentioned above, the API returns JSON." | "The API returns JSON." |
+| 6 | Nominalizations | "We performed a migration of 12 tables." | "We migrated 12 tables." |
+| 7 | Redundant pairs | "Each and every request is logged." | "Every request is logged." |
+| 8 | Padded conditions | "In the event that the build fails, retry." | "If the build fails, retry." |
+| 9 | Passive bloat | "The file is created by the installer." | "The installer creates the file." |
+| 10 | Wordy verb phrases | "Make use of the `--force` flag." | "Use the `--force` flag." |
+
+The facts (`PORT`, 60s, JSON, 12 tables, `--force`) never change. Only the words around them do.
+
 ## How Tighten is different from caveman / humanizer
 
 [caveman](https://github.com/juliusbrussee/caveman) is an output mode: it makes the agent's own replies terser to save tokens. [humanizer](https://github.com/blader/humanizer) rewrites AI text to sound more human, stripping the "tells" and reworking tone and voice. Tighten also rewrites text, but its job is length and clarity: cut the bloat, keep every fact, and match the doc's existing style.
