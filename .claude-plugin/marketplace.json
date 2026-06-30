@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "tighten",
+  "description": "Tighten prose for Claude Code: same meaning, fewer words, every fact kept.",
+  "owner": {
+    "name": "raj-khan",
+    "url": "https://github.com/raj-khan"
+  },
+  "plugins": [
+    {
+      "name": "tighten",
+      "description": "Rewrite long or padded prose tight and clear. Not a summarizer; every fact kept.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

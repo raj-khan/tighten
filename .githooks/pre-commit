@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+if git diff --cached --name-only | grep -q '^skills/tighten/SKILL\.md$'; then
+  scripts/sync-skill.sh
+fi

@@ -4,7 +4,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/tighten-skill.svg)](https://www.npmjs.com/package/tighten-skill)
 [![license](https://img.shields.io/npm/l/tighten-skill.svg)](LICENSE)
 
-A [Claude Code](https://claude.com/claude-code) slash command that rewrites long or padded prose to be tight and clear: **same meaning, fewer words, every fact kept.**
+An agent skill that rewrites long or padded prose to be tight and clear: **same meaning, fewer words, every fact kept.** Works in [Claude Code](https://claude.com/claude-code), Cursor, Windsurf, Codex, Cline, GitHub Copilot, and [50+ other agents](https://github.com/vercel-labs/skills).
 
 It is *not* a summarizer. It cuts filler, hedging, buzzwords, and empty adjectives while keeping every number, path, code block, and caveat verbatim.
 
@@ -12,7 +12,31 @@ It is *not* a summarizer. It cuts filler, hedging, buzzwords, and empty adjectiv
 
 ## Install
 
-### With npx (easiest)
+### Any agent (via the `skills` CLI)
+
+Installs the skill into whichever agent you target with `-a`:
+
+```bash
+npx skills add raj-khan/tighten                    # Claude Code (default)
+npx skills add raj-khan/tighten -a cursor
+npx skills add raj-khan/tighten -a windsurf
+npx skills add raj-khan/tighten -a codex
+npx skills add raj-khan/tighten -a cline
+npx skills add raj-khan/tighten -a github-copilot
+```
+
+See the full [agent list](https://github.com/vercel-labs/skills) for every supported `-a` value.
+
+### Claude Code plugin
+
+```bash
+claude plugin marketplace add raj-khan/tighten
+claude plugin install tighten@tighten
+```
+
+### Claude Code slash command (npx)
+
+Installs `/tighten` as a slash command:
 
 ```bash
 npx tighten-skill            # install for your user (~/.claude/commands)
@@ -21,7 +45,7 @@ npx tighten-skill --project  # install into the current project (.claude/command
 
 ### By hand
 
-It's one Markdown file, so you can drop it in directly:
+The slash command is one Markdown file, so you can drop it in directly:
 
 ```bash
 mkdir -p ~/.claude/commands
@@ -29,7 +53,7 @@ curl -o ~/.claude/commands/tighten.md \
   https://raw.githubusercontent.com/raj-khan/tighten/main/tighten.md
 ```
 
-Restart Claude Code (or run `/help`) and `/tighten` will appear in the list.
+Restart your agent (in Claude Code, run `/help`) and Tighten will be available.
 
 ## Usage
 

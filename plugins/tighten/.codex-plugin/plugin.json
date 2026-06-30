@@ -1,0 +1,39 @@
+{
+  "name": "tighten",
+  "version": "1.0.0",
+  "description": "Rewrite long or padded prose tight and clear: same meaning, fewer words, every fact kept.",
+  "author": {
+    "name": "raj-khan",
+    "url": "https://github.com/raj-khan"
+  },
+  "homepage": "https://github.com/raj-khan/tighten",
+  "repository": "https://github.com/raj-khan/tighten",
+  "license": "MIT",
+  "keywords": [
+    "tighten",
+    "prose",
+    "editing",
+    "concise",
+    "writing",
+    "claude-code",
+    "claude-code-skill",
+    "claude-code-plugin",
+    "cursor",
+    "codex",
+    "productivity"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Tighten",
+    "shortDescription": "Same meaning, fewer words, every fact kept.",
+    "longDescription": "Rewrite long or padded prose tight and clear. Cuts filler, hedging, and buzzwords while keeping every number, path, code block, and caveat verbatim. Not a summarizer.",
+    "developerName": "raj-khan",
+    "category": "Productivity",
+    "capabilities": ["Write"],
+    "websiteURL": "https://github.com/raj-khan/tighten",
+    "defaultPrompt": [
+      "Tighten this prose: same meaning, fewer words, keep every fact."
+    ],
+    "brandColor": "#238636"
+  }
+}
