@@ -1,5 +1,9 @@
 # Tighten
 
+[![npm version](https://img.shields.io/npm/v/tighten-skill.svg)](https://www.npmjs.com/package/tighten-skill)
+[![npm downloads](https://img.shields.io/npm/dm/tighten-skill.svg)](https://www.npmjs.com/package/tighten-skill)
+[![license](https://img.shields.io/npm/l/tighten-skill.svg)](LICENSE)
+
 A [Claude Code](https://claude.com/claude-code) slash command that rewrites long or padded prose to be tight and clear: **same meaning, fewer words, every fact kept.**
 
 It is *not* a summarizer. It cuts filler, hedging, buzzwords, and empty adjectives while keeping every number, path, code block, and caveat verbatim.
