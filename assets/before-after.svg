@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="360" viewBox="0 0 860 360" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+  <rect width="860" height="360" rx="16" fill="#0d1117"/>
+  <text x="430" y="44" text-anchor="middle" fill="#e6edf3" font-size="26" font-weight="700">/tighten</text>
+  <text x="430" y="70" text-anchor="middle" fill="#8b949e" font-size="14">Same meaning. Fewer words. Every fact kept.</text>
+
+  <!-- BEFORE card -->
+  <rect x="30" y="96" width="360" height="216" rx="12" fill="#161b22" stroke="#30363d"/>
+  <rect x="30" y="96" width="360" height="34" rx="12" fill="#21262d"/>
+  <circle cx="50" cy="113" r="5" fill="#ff7b72"/>
+  <text x="68" y="118" fill="#c9d1d9" font-size="13" font-weight="600">BEFORE  ·  58 words</text>
+  <text x="48" y="158" fill="#8b949e" font-size="13">In order to be able to actually go ahead</text>
+  <text x="48" y="180" fill="#8b949e" font-size="13">and deploy, it is basically necessary that</text>
+  <text x="48" y="202" fill="#8b949e" font-size="13">you should first make sure that you have</text>
+  <text x="48" y="224" fill="#8b949e" font-size="13">set the API_KEY environment variable, due</text>
+  <text x="48" y="246" fill="#8b949e" font-size="13">to the fact that the build step will end up</text>
+  <text x="48" y="268" fill="#8b949e" font-size="13">failing without it at this point in time.</text>
+
+  <!-- arrow -->
+  <text x="430" y="210" text-anchor="middle" fill="#58a6ff" font-size="30" font-weight="700">&#8594;</text>
+
+  <!-- AFTER card -->
+  <rect x="470" y="96" width="360" height="216" rx="12" fill="#161b22" stroke="#238636"/>
+  <rect x="470" y="96" width="360" height="34" rx="12" fill="#1a2b1f"/>
+  <circle cx="490" cy="113" r="5" fill="#3fb950"/>
+  <text x="508" y="118" fill="#c9d1d9" font-size="13" font-weight="600">AFTER  ·  16 words</text>
+  <text x="488" y="170" fill="#e6edf3" font-size="14">Set the API_KEY environment</text>
+  <text x="488" y="194" fill="#e6edf3" font-size="14">variable before deploying; the</text>
+  <text x="488" y="218" fill="#e6edf3" font-size="14">build step fails without it.</text>
+  <text x="488" y="262" fill="#3fb950" font-size="12">&#10003; API_KEY kept   &#10003; meaning kept   -72%</text>
+
+  <text x="430" y="338" text-anchor="middle" fill="#6e7681" font-size="12">A Claude Code slash command for tightening prose without losing facts.</text>
+</svg>
