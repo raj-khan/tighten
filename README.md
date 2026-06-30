@@ -56,21 +56,21 @@ Given a file or section, it edits in place and reports rough before/after size. 
 You run:
 
 ```
-/tighten Set up the database connection notes, keep the connection string
+/tighten our migration status update
 ```
 
-**Before (58 words):**
+**Before (45 words):**
 
-> In order to be able to actually go ahead and deploy, it is basically necessary
-> that you should first make sure that you have set the `API_KEY` environment
-> variable, due to the fact that the build step will end up failing without it
-> at this point in time.
+> At this moment in time, we are currently in the process of working towards the
+> goal of migrating the remaining 12 services over to the new v2 API, and it is
+> anticipated that this effort will in all likelihood be fully completed by
+> March 14.
 
 **After (16 words):**
 
-> Set the `API_KEY` environment variable before deploying; the build step fails without it.
+> We're migrating the remaining 12 services to the v2 API, expected to finish by March 14.
 
-The fact (`API_KEY`, the build failing) survives. The padding ("in order to be able to actually," "due to the fact that," "at this point in time") is gone. Claude then confirms every fact survived and reports `~72% shorter`.
+The facts (12 services, the v2 API, the March 14 date) survive. The padding ("At this moment in time," "currently in the process of working towards the goal of," "it is anticipated that," "in all likelihood") is gone. Claude then confirms every fact survived and reports `~64% shorter`.
 
 ## How it behaves
 
