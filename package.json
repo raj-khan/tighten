@@ -1,0 +1,33 @@
+{
+  "name": "tighten-skill",
+  "version": "1.0.0",
+  "description": "A Claude Code slash command that tightens prose: same meaning, fewer words, every fact kept.",
+  "bin": {
+    "tighten-skill": "bin/install.js"
+  },
+  "files": [
+    "bin/install.js",
+    "tighten.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "slash-command",
+    "skill",
+    "writing",
+    "editing",
+    "prose"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raj-khan/tighten.git"
+  },
+  "homepage": "https://github.com/raj-khan/tighten#readme",
+  "bugs": {
+    "url": "https://github.com/raj-khan/tighten/issues"
+  },
+  "author": "raj-khan",
+  "license": "MIT"
+}

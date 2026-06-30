@@ -8,9 +8,16 @@ It is *not* a summarizer. It cuts filler, hedging, buzzwords, and empty adjectiv
 
 ## Install
 
-Tighten is a single Markdown file. Drop it into your Claude Code commands folder.
+### With npx (easiest)
 
-**For just you (all projects):**
+```bash
+npx tighten-skill            # install for your user (~/.claude/commands)
+npx tighten-skill --project  # install into the current project (.claude/commands)
+```
+
+### By hand
+
+Tighten is a single Markdown file, so you can also just drop it in:
 
 ```bash
 mkdir -p ~/.claude/commands
@@ -18,15 +25,7 @@ curl -o ~/.claude/commands/tighten.md \
   https://raw.githubusercontent.com/raj-khan/tighten/main/tighten.md
 ```
 
-**For one project (shared with your team via git):**
-
-```bash
-mkdir -p .claude/commands
-curl -o .claude/commands/tighten.md \
-  https://raw.githubusercontent.com/raj-khan/tighten/main/tighten.md
-```
-
-Or just clone this repo and copy the file:
+Or clone and copy:
 
 ```bash
 git clone https://github.com/raj-khan/tighten.git
