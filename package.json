@@ -1,6 +1,6 @@
 {
   "name": "tighten-skill",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Claude Code slash command that tightens prose: same meaning, fewer words, every fact kept.",
   "bin": {
     "tighten-skill": "bin/install.js"
