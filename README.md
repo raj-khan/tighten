@@ -104,19 +104,20 @@ The facts (12 services, the v2 API, the March 14 date) survive. The padding ("At
 - **Matches your style.** It follows the punctuation, headings, and reference style the file already uses.
 - **Asks first if you mean *summarize*.** Leaving facts out is a different job; it will confirm before doing that.
 
-## How Tighten is different from caveman / concise
+## How Tighten is different from caveman / humanizer
 
-Skills like [caveman](https://github.com/juliusbrussee/caveman) and [concise](https://github.com/o4f6bgpac3/concise) change how the agent *talks*: every reply comes out terser to save tokens. Tighten is not a response mode. It's a tool you point at a specific doc to rewrite it.
+[caveman](https://github.com/juliusbrussee/caveman) is an output mode: it makes the agent's own replies terser to save tokens. [humanizer](https://github.com/blader/humanizer) rewrites AI text to sound more human, stripping the "tells" and reworking tone and voice. Tighten also rewrites text, but its job is length and clarity: cut the bloat, keep every fact, and match the doc's existing style.
 
-| | caveman / concise | Tighten |
-|---|---|---|
-| Acts on | the agent's own replies, all of them | a target you choose: a file, section, or pasted text |
-| Goal | fewer output tokens | clearer docs, every fact kept |
-| Grammar | drops articles, uses fragments | full, correct sentences (short, not crammed) |
-| Facts | compresses prose freely | every number, path, code block, and caveat verbatim; not a summarizer |
-| Mode | persistent for the session | invoked on demand; edits files in place and reports before/after size |
+| | caveman | humanizer | Tighten |
+|---|---|---|---|
+| Category | output mode | rewrite tool | rewrite tool |
+| Acts on | every reply the agent writes | existing AI-written text | a target you choose: a file, section, or pasted text |
+| Goal | fewer output tokens | sound human, remove AI "tells" | shorter and clearer |
+| Changes | drops articles, uses fragments | tone and voice | wording only |
+| Keeps | code and error output | the facts | every fact verbatim: numbers, paths, code blocks, caveats |
+| Length | shorter | about the same | shorter |
 
-Use caveman or concise to spend fewer tokens as you work. Use Tighten when you have a doc that needs to read tight and stay accurate.
+Reach for humanizer when AI text reads robotic. Reach for Tighten when it reads bloated. They compose well: humanize first, then tighten.
 
 ## Contributing
 
