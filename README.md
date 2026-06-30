@@ -21,7 +21,7 @@ npx tighten-skill --project  # install into the current project (.claude/command
 
 ### By hand
 
-Tighten is a single Markdown file, so you can also just drop it in:
+It's one Markdown file, so you can drop it in directly:
 
 ```bash
 mkdir -p ~/.claude/commands
@@ -40,7 +40,7 @@ Restart Claude Code (or run `/help`) and `/tighten` will appear in the list.
 - **target** : a file path, a section name, or pasted text.
 - **intent** *(optional)* : how hard to cut, a target length, the audience, or what to protect.
 
-If you give it a file or section, it edits in place and reports the rough before/after size. If you paste text, it returns the rewrite.
+Given a file or section, it edits in place and reports rough before/after size. Given pasted text, it returns the rewrite.
 
 ### Examples
 
@@ -75,14 +75,14 @@ The fact (`API_KEY`, the build failing) survives. The padding ("in order to be a
 ## How it behaves
 
 - **Keeps every fact.** Numbers, paths, signatures, enums, constants, error strings, decisions, caveats, code blocks, and tables stay verbatim.
-- **Honors your intent.** "lightly" vs "hard", "to ~120 words", "for execs", "keep section 3" — but it never drops a fact just to hit a length.
+- **Honors your intent.** "lightly" vs "hard", "to ~120 words", "for execs", "keep section 3". It never drops a fact just to hit a length.
 - **Short, not crammed.** It splits awkward sentences instead of jamming clauses together.
 - **Matches your style.** It follows the punctuation, headings, and reference style the file already uses.
 - **Asks first if you mean *summarize*.** Leaving facts out is a different job; it will confirm before doing that.
 
 ## Contributing
 
-Issues and pull requests are welcome. The whole skill is `tighten.md` — edit the prompt, open a PR.
+Issues and pull requests are welcome. The whole skill is `tighten.md`: edit the prompt, open a PR.
 
 ## License
 
